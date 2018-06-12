@@ -2,13 +2,13 @@ import express from 'express'
 const app = express()
 import mongoose from 'mongoose'
 import keys from './config/keys'
+import routes from './routes'
 
 mongoose.Promise = global.Promise
 mongoose.connect(keys.MONGO_URI)
 
 
-
-
+routes(app)
 
 
 
