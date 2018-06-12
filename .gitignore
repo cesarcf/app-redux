@@ -1,7 +1,12 @@
+#Sever
 node_modules/
 .npm
 # Optional eslint cache
 .eslintcache
 package-lock.json
 config/prod.js
-build
+build/dev.js
+
+# Client
+client/node_modules
+client/build
